@@ -1,4 +1,7 @@
-class __name__ extends daze.Controller {
+const { Rest } = daze
+
+@Rest('{{ name | lower }}')
+class {{ name }} {
   /**
    * Display a listing of the resource.
    */
@@ -53,4 +56,4 @@ class __name__ extends daze.Controller {
   }
 }
 
-module.exports = __name__
+module.exports = {{ name }}

@@ -8,7 +8,7 @@ program
 
 program
   .command('create', 'create new daze project')
-  .command('controller <controllerName>', 'create new daze controller')
+  .command('make <type> <controllerName>', 'create new daze file')
 
 program.parse(process.argv)
 

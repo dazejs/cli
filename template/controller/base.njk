@@ -1,0 +1,11 @@
+const { Controller, Get } = daze
+
+@Controller('{{ name | lower }}')
+class {{ name }} {
+  @Get()
+  index() {
+    //
+  }
+}
+
+module.exports = {{ name }}

@@ -1,0 +1,16 @@
+const { DazeTransformer } = require('@dazejs/framework')
+
+class {{ name }} extends DazeTransformer {
+  /**
+   * Transform the resource.
+   * @param {object|array} data
+   * @returns {object}
+   */
+  toJSON(data) {
+    return {
+      ...data,
+    }
+  }
+}
+
+module.exports = {{ name }}

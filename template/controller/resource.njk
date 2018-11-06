@@ -1,7 +1,9 @@
-const { Rest } = daze
+const { Controller, Decractors } = require('@dazejs/framework)
+
+const { Rest } = Decractors
 
 @Rest('{{ names | lower }}')
-class {{ name }} {
+class {{ name }} extends Controller {
   /**
    * Display a listing of the resource.
    */

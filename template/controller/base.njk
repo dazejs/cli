@@ -1,7 +1,9 @@
-const { Controller, Get } = daze
+const { Controller, Decractors } = require('@dazejs/framework)
 
-@Controller('{{ names | lower }}')
-class {{ name }} {
+const { Router, Get } = Decractors
+
+@Router('{{ names | lower }}')
+class {{ name }} extends Controller {
   @Get()
   index() {
     //

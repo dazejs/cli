@@ -5,7 +5,8 @@ const program = require('commander')
 const makeLib = require('../lib/make/index')
 
 program
-  .option('-r, --resource', 'make framework file')
+  .option('-r, --resource', 'make resource controller')
+  .option('-n, --no-ext', 'make file no type ext')
   .parse(process.argv)
 
 

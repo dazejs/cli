@@ -1,16 +1,24 @@
 {
   "name": "@dazejs/cli",
-  "version": "0.1.4",
-  "description": "",
+  "version": "1.0.0",
+  "description": "Daze.js project tools",
   "bin": {
     "daze": "./bin/daze.js"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "daze",
+    "dazejs",
+    "nodejs",
+    "cli",
+    "framework",
+    "ioc",
+    "framework",
+    "restfuk",
+    "api",
+    "http"
+  ],
+  "author": "Chan Zewail",
+  "license": "MIT",
   "dependencies": {
     "chalk": "^2.4.1",
     "commander": "^2.17.1",

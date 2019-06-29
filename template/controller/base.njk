@@ -1,13 +1,11 @@
-const { Controller, Decractors } = require('@dazejs/framework')
+const { Controller, Http } = require('@dazejs/framework');
 
-const { Router, Get } = Decractors
-
-@Router('{{ names | lower }}')
-class {{ name }} extends Controller {
-  @Get()
+@Controller('{{ names | lower }}')
+class {{ name }} {
+  @Http.Get()
   index() {
     //
   }
 }
 
-module.exports = {{ name }}
+module.exports = {{ name }};

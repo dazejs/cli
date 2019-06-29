@@ -1,9 +1,7 @@
-const { Controller, Decractors } = require('@dazejs/framework')
+const { RestController, Http } = require('@dazejs/framework');
 
-const { Rest } = Decractors
-
-@Rest('{{ names | lower }}')
-class {{ name }} extends Controller {
+@RestController('{{ names | lower }}')
+class {{ name }} {
   /**
    * Display a listing of the resource.
    */
@@ -58,4 +56,4 @@ class {{ name }} extends Controller {
   }
 }
 
-module.exports = {{ name }}
+module.exports = {{ name }};

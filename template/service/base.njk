@@ -1,19 +1,8 @@
-const { Service } = require('@dazejs/framework')
+const { Validator } = require('@dazejs/framework');
 
-class {{ name }} extends Service {
-  /**
-   * Get items data from service
-   */
-  getItems(params) {
-    //
-  }
-
-  /**
-   * Get item data from service by id
-   */
-  getItemById(id) {
-    //
-  }
+@Validator('{{ name | lower }}')
+class {{ name }} {
+  
 }
 
-module.exports = {{ name }}
+module.exports = {{ name }};

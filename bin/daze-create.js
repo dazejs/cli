@@ -1,10 +1,12 @@
-#!/usr/bin/env node
 
-const program = require('commander')
-const createLib = require('../lib/create')
+const program = require('commander');
+const Create = require('../lib/create');
 
 program
   .option('-f, --force', 'force installation without npm install')
-  .parse(process.argv)
+  .option('-b, --branch', 'install which branch in github')
+  .parse(process.argv);
 
-createLib(program)
+(async () => {
+  await (new Create(program)).handle();
+})();

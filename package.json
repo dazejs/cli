@@ -20,7 +20,7 @@
   "author": "Chan Zewail",
   "license": "MIT",
   "engines": {
-    "node": ">=10.15.0"
+    "node": ">=10.0.0"
   },
   "dependencies": {
     "chalk": "^2.4.1",

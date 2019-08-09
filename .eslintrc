@@ -8,12 +8,9 @@
     "babel"
   ],
   "env": {
-    "browser": true,
     "node": true,
     "es6": true,
-    "mocha": true,
     "jest": true,
-    "jasmine": true
   },
   "globals": {
     "res": true,
@@ -22,6 +19,7 @@
     "view": true
   },
   "rules": {
+    "strict": [0],
     "no-restricted-syntax": [
       0
     ],

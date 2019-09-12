@@ -1,6 +1,6 @@
 {
   "name": "@dazejs/cli",
-  "version": "1.0.0-beta.2",
+  "version": "1.0.0",
   "description": "Daze.js project tools",
   "bin": {
     "daze": "./bin/daze.js"

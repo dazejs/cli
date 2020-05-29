@@ -49,12 +49,11 @@ export class Render {
       }
     );
     for (const file of files) {
-      console.log(11111, file)
       const filename = path.join(
+        process.cwd(),
         this._destinationPath,
         path.relative(distPath, file)
       );
-      console.log(filename)
       const str = this._env.render(file);
       fsExtra.ensureFileSync(filename)
       fs.writeFileSync(filename, str, {

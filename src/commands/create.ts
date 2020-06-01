@@ -4,7 +4,7 @@ import { ActionAbstract } from '../actions';
 
 export class CreateCommand {
 
-  program: CommanderStatic;
+  private program: CommanderStatic;
 
   constructor(program: CommanderStatic) {
     this.program = program;
@@ -15,8 +15,8 @@ export class CreateCommand {
       .command('create [name]')
       .alias('c')
       .description('Generate Daze application.')
-      .action((name: string, command: Command) => {
-        action.resolve(name);
+      .action(async (name: string = '', destination: Command) => {
+        await action.source('application').resolve(name, destination);
       });
   }
 }

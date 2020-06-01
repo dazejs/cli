@@ -1,0 +1,11 @@
+import { middleware } from '@dazejs/framework';
+
+@middleware()
+export class {{ name | firstUpperCase }}Middleware {
+  async resolve(request, next) {
+    // TODO: before next
+    const response = await next();
+    // TODO: after next
+    return response;
+  }
+}

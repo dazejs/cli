@@ -1,0 +1,53 @@
+import { rest } from '@dazejs/framework';
+
+@rest('/{{ name | plural | lower }}')
+export class {{ name | firstUpperCase }} {
+  /**
+   * Display a listing of the resource.
+   */
+  index() {
+    //
+  }
+
+  /**
+   * Show the form for creating a new resource.
+   */
+  create() {
+    //
+  }
+
+  /**
+   * Display the specified resource.
+   */
+  show(id: string | number) {
+    //
+  }
+
+  /**
+   * Show the form for editing the specified resource.
+   */
+  edit(id: string | number) {
+    //
+  }
+
+  /**
+   * Store a newly created resource in storage.
+   */
+  store() {
+    //
+  }
+
+  /**
+   * Update the specified resource in storage.
+   */
+  update(id: string | number) {
+    //
+  }
+
+  /**
+   * Remove the specified resource from storage.
+   */
+  destroy(id: string | number) {
+    //
+  }
+}

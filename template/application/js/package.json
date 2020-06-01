@@ -1,0 +1,34 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "cross-env DAZE_ENV=dev DEBUG=daze-framework:* nodemon --signal SIGTERM --exec babel-node src/index.js --source-map --preserve-symlinks",
+    "build": "babel src --out-dir dist --copy-files",
+    "prod": "cross-env DAZE_ENV=prod node dist/index.js",
+    "commit": "npx git-cz"
+  },
+  "engines": {
+    "node": ">=10.15.0"
+  },
+  "dependencies": {
+    "@dazejs/framework": "^3.1.1",
+    "reflect-metadata": "^0.1.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/node": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.4.4 ",
+    "@babel/plugin-proposal-decorators": "^7.4.4",
+    "@babel/preset-env": "^7.1.0",
+    "babel-eslint": "^8.2.6",
+    "commitizen": "^3.0.5",
+    "cross-env": "^5.2.0",
+    "eslint": "^5.2.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-babel": "^5.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^8.0.1",
+    "nodemon": "^1.18.3"
+  }
+}

@@ -1,5 +1,4 @@
-node_modules
-.idea
-.vscode
-coverage
-npm-debug.log
+/node_modules
+/old
+/dist
+/temp

@@ -1,0 +1,11 @@
+import {
+  http, controller
+} from '@dazejs/framework';
+
+@controller('/{{ name | plural | lower }}')
+export class {{ name | firstUpperCase }} {
+  @http.get()
+  index() {
+    // TODO
+  }
+}

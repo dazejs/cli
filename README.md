@@ -7,6 +7,9 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/09d6f0f7a58d406c9c9b8ec4abaab2a6)](https://www.codacy.com/manual/dazejs/daze?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=dazejs/daze&amp;utm_campaign=Badge_Grade)
 [![GitHub license](https://img.shields.io/github/license/dazejs/daze.svg)](https://github.com/dazejs/daze/blob/master/LICENSE)
 
+
+### 该仓库已经弃用，请查看[daze](https://github.com/dazejs/daze)
+
 <div align="center">
   <a href="https://github.com/dazejs/daze">
     <img width="200" heigth="200" src="https://github.com/dazejs/daze/blob/master/assets/logo.png">
